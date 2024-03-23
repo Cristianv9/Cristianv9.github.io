@@ -12,7 +12,7 @@ main {
 
   article {
 
-    background: #2f6416;
+    background: #D9C7B3;
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -32,6 +32,35 @@ main {
     object-fit: cover;
   }
 
+  article h1{
+    color: #588157;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  }
+
+  article p{
+    color: #588157;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  a:link, a:visited{
+    display: inline-block;
+    color: #D9C7B3;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  transition: transform 0.25s;
+  }
+
+  a:hover, a:active {
+    background:#D9C7B3;
+    color: #fff;
+    transform: scale(1.25);
+  }
   
+    
 
   
