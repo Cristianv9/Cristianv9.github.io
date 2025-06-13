@@ -1,66 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-body{
-    font-family:  "Playfair Display", serif;
+body {
+  font-family: 'Courier Prime', monospace;
+  background: #f8f6f1;
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  margin: 0;
+  padding: 0;
 }
 
-main {
+/* NAVIGATION BAR */
+.navbar {
+  background: white;
+  border-bottom: 2px solid black;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-  article {
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
 
-    background: #D9C7B3;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  aside {
-    background: lightcoral;
-  }
-
-  aside img {
-
-    display: block;
-    max-width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  article h1{
-    color: #588157;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  }
-
-  article p{
-    color: #588157;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  a:link, a:visited{
-    display: inline-block;
-    color: #D9C7B3;
+.nav-links li a {
   text-decoration: none;
-  background: #fff;
-  border-radius: 4px;
-  padding: 0.5em 1em;
-  transition: transform 0.25s;
-  }
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
 
-  a:hover, a:active {
-    background:#D9C7B3;
-    color: #fff;
-    transform: scale(1.25);
-  }
-  
-    
+.nav-links li a:hover {
+  border-color: black;
+}
 
-  
+/* MAIN CONTENT */
+.fbi-file {
+  background: white;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 60px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px #aaa;
+  position: relative;
+}
+
+.mugshot {
+  float: right;
+  margin-left: 40px;
+}
+
+.mugshot img {
+  width: 220px;
+  border: 3px solid black;
+  filter: grayscale(100%);
+}
+
+.line {
+  margin-bottom: 22px;
+  white-space: pre-wrap;
+}
+
+.line strong {
+  display: inline-block;
+  width: 250px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 1rem;
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid black;
+  background: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* portfolio css */
+
+/* CARD LAYOUT */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.case-card {
+  background: white;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px #aaa;
+  padding: 30px;
+  width: 300px;
+  font-family: 'Courier Prime', monospace;
+  transition: transform 0.2s ease;
+}
+
+.case-card:hover {
+  transform: scale(1.03);
+}
+
+.case-card h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.case-card p {
+  margin: 10px 0;
+}
+
+.case-card.placeholder {
+  background: #f4f4f4;
+  color: #777;
+  font-style: italic;
+  border-style: dashed;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* Contact Info */
+
+.case-card p a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.case-card p a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+.case-card p i {
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 1.3rem;
+  color: #000;
+}
+
